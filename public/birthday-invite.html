@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invite Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .invitation {
+            display: flex;
+            background-color: rgb(178, 249, 249);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            padding: 40px;
+            border-radius: 20px;
+        }
+        .header {
+            padding: 13px;
+            background-color: rgb(253, 181, 181);
+            margin-bottom: 13px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            text-align: center;
+        }
+        .content {
+            background-color: rgb(200, 248, 200);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+        }
+        .content img {
+            border-radius: 20px;
+            width: 330px;
+        }
+        .text {
+            background-color: rgb(239, 239, 239);
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            /* gap: 12px; */
+            /* margin-bottom: 13px; */
+        }
+        .list {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+        }
+        .location {
+            background-color: rgb(229, 244, 176);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            border-radius: 20px;
+        }
+        .location a {
+            text-decoration: none;
+        }
+        .content ul li {
+            list-style: none;
+        }
+        .cta {
+            background-color: rgb(244, 231, 215);
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+        .cta form {
+            display: flex;
+            flex-direction: column;
+            margin: 23px;
+            gap: 12px;
+        }
+        form input {
+            height: 24px;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation">
+        <div class="header">
+            <h1>It's My Birthday!</h1>
+            <h2>On the 17th October</h2>
+        </div>
+        <div class="content">
+            <img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg"
+                alt="image of a birthday cake">
+            <div class="text">
+                <div class="list">
+                    <h3>What to bring:</h3>
+                    <ul>
+                        <li>Baloons (I love baloons) </li>
+                        <li>Cake (I'm really good at eating)</li>
+                        <li>An appetite (There will be lots of food)</li>
+                    </ul>
+                </div>
+                <div class="location">
+                    <h3>This is where you need to go:</h3>
+                    <a
+                        href="https://www.google.com/maps/@35.7040744,139.5577317,3a,75y,289.6h,87.01t,0.72r/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656">Google
+                        Map Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta">
+            <h3>Fill in the details:</h3>
+            <form action="submit">
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your location">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
